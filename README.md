@@ -77,5 +77,4 @@ ORDER BY weeks_in_top_10 DESC;
 Dashboard to complement the insights extracted from the data
 
 https://lookerstudio.google.com/reporting/f2ae2a25-4664-4c85-83ea-afccb492ad29
-![imagem_2023-11-10_101454716](https://github.com/Ronan-Alencar/Startups/assets/133599706/ed64aa97-e33e-4b5a-a87d-697f63efb2bf)
 
