@@ -58,6 +58,22 @@ GROUP BY show_title
 ORDER BY weeks_in_top_10 DESC;
 ```
 
+Question 3/Runtime
+
+```SQL
+SELECT
+  show_title,
+  MAX (cumulative_weeks_in_top_10) AS weeks_in_top_10,
+  ROUND (AVG(weekly_hours_viewed), 2) AS avg_views,
+  MAX (runtime)
+FROM netflix.nf_top t
+LEFT JOIN netflix.nf_runtime ru ON t.show_title = ru.title
+WHERE category = "Films (Non-English)"
+AND week != "2022-05-22"
+GROUP BY show_title
+ORDER BY weeks_in_top_10 DESC;
+```
+
 Dashboard to complement the insights extracted from the data
 
 https://lookerstudio.google.com/reporting/f2ae2a25-4664-4c85-83ea-afccb492ad29
